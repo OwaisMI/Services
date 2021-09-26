@@ -202,3 +202,6 @@ C:\Users\Owais\source\repos\Services\obj\Debug\netcoreapp3.1\Razor\Views\Socials
 C:\Users\Owais\source\repos\Services\obj\Debug\netcoreapp3.1\Razor\Views\Socials\Details.cshtml.g.cs
 C:\Users\Owais\source\repos\Services\obj\Debug\netcoreapp3.1\Razor\Views\Socials\Edit.cshtml.g.cs
 C:\Users\Owais\source\repos\Services\obj\Debug\netcoreapp3.1\Razor\Views\Socials\Index.cshtml.g.cs
+C:\Users\Owais\source\repos\Services\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Owais\source\repos\Services\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Owais\source\repos\Services\obj\Debug\netcoreapp3.1\Razor\Views\Vendor\Index.cshtml.g.cs

@@ -83,16 +83,22 @@ namespace Services.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    //#region Check Roles Region
+                    #region Check Roles Region
                     // Resolve the user via their email
-                   // var user = await _userManager.FindByEmailAsync(Input.Email);
+                    var user = await _userManager.FindByEmailAsync(Input.Email);
                     // Get the roles for the user
-                   // var roles = await _userManager.GetRolesAsync(user);
+                    var roles = await _userManager.GetRolesAsync(user);
                     //x will save the role names
-                    //if (roles.Where(x => x.Contains("Super Admin")).Count() > 0)
-                    //{
-                       // return RedirectToAction("Index", "Dashboard");
-                    //}
+                    if (roles.Where(x => x.Contains("Super Admin")).Count() > 0)
+                    {
+                        return RedirectToAction("Index", "Dashboard");
+                    }
+                    else if(roles.Where(y => y.Contains("Vendor")).Count() > 0)
+                        {
+                            return RedirectToAction("Index", "Vendor");
+                        }
+
+                    #endregion
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
